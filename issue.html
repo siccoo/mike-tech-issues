@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MikeTECH Issue Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="issue.css"> -->
+</head>
+
+<body onload="fetchIssues()">
+    <div class="container">
+        <h1>MikeTECH Issue Tracker<small>Port Harcourt, Nigeria</small></h1>
+        <div class="mainbox">
+
+            <h3>Add New Issue:</h3>
+            <form id="issueInputForm">
+                <label for="IssueDescriptionInput">Description</label>
+                <p>
+                    <input type="text" class="form-control" id="issueDescriptionInput" placeholder="Describe the issue...">
+                </p>
+                <label for="">Severity</label>
+                <p>
+                    <select id="issueSeverityInput" class="form-control">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </p>
+                <label for="IssueAssignedToInput">Assigned To</label>
+                <p>
+                    <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible...">
+                </p>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form> 
+            <div class="col-lg-12">
+                <div id="issueList"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy MikeTECH Computers</p>
+    </div>
+
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <script
+	src="http://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="issue.js"></script>
+
+</body>
+
+</html>
